@@ -1,0 +1,75 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = null;
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    <link href="CSS/bootstrap.css" rel="stylesheet" />
+    <link href="CSS/normalize.css" rel="stylesheet" />
+    <link href="CSS/Control.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script type="text/javascript" src="JS/prefixfree.min.js"></script>
+</head>
+<body>
+    <div>
+        <form action="@Url.Content("~/Acceso/Login")" method="post">
+            <div>
+                <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                        <div class="dropdown">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Menu
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="Fuente.aspx">Producto</a>
+                                <a class="dropdown-item" href="#">Reportes</a>
+                                <a class="dropdown-item" href="#">Catalogo</a>
+                                <a class="dropdown-item" href="Perfil.aspx">Mi perfil</a>
+                            </div>
+                        </div>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <li class="nav-item active">
+                                <input type="search" placeholder="Buscar" />
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <a href="#" class="bt-home" id="activarLogin"><i aria-hidden="true">Ingresar </i></a>
+                            <a href="" class="bt-home" id="activarRegistro"><i aria-hidden="true">Registrar</i></a>
+                            <a href="#" class="bt-home" id="carrito">
+                                <i aria-hidden="true">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart4" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+                                    </svg>
+                                </i>
+                            </a>
+                            &nbsp;
+                        </form>
+                    </div>
+                </nav>
+            </div>
+            <div class="login" id="login">
+                <a href="" class="cerrar" id="cerrar"><i class="fa fa-times" aria-hidden="true">X</i></a>
+                <form>
+                    <input type="text" required placeholder="Usuario" name="User">
+                    <input type="password" requered placeholder="********" name="Pass">
+                    <input type="submit" value="Entrar" class="btn-home" name="end" />
+                </form>
+            </div>
+             </form>
+    </div>
+    <script src="JS/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="JS/acciones.js"></script>
+    <script src="JS/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html>
